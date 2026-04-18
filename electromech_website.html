@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Electromech General Trading — Abu Dhabi's premier supplier of electrical supplies, building materials, hardware, and industrial products on Hamdan Street.">
+<meta name="keywords" content="hardware store Abu Dhabi, electrical supplies UAE, building materials Hamdan Street, tools Abu Dhabi, Electromech">
+<meta property="og:title" content="Electromech General Trading — Abu Dhabi">
+<meta property="og:description" content="Quality electrical supplies, building materials & hardware. Hamdan Street, Abu Dhabi. Rated 4.9★ on Google.">
+<title>Electromech General Trading | Hardware & Electrical Supplies — Abu Dhabi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=Noto+Kufi+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --navy: #0a0f1e;
+  --navy-mid: #111827;
+  --navy-light: #1a2540;
+  --gold: #c9a84c;
+  --gold-light: #e8c97a;
+  --gold-pale: #f5e9cc;
+  --white: #ffffff;
+  --offwhite: #f9f6f0;
+  --muted: #8a96a8;
+  --text: #e8eaf0;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'DM Sans', sans-serif;
+  --arabic: 'Noto Kufi Arabic', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--navy); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.6; overflow-x: hidden; }
+
+body[dir="rtl"] { font-family: var(--arabic); }
+body[dir="rtl"] .hero-eyebrow::before,
+body[dir="rtl"] .section-tag::before { display: none; }
+body[dir="rtl"] .hero-eyebrow::after,
+body[dir="rtl"] .section-tag::after { content: ''; display: block; width: 40px; height: 1px; background: var(--gold); }
+body[dir="rtl"] .about-box::before { left: auto; right: 0; }
+body[dir="rtl"] .aside-review { border-left: none; border-right: 3px solid var(--gold); }
+body[dir="rtl"] .product-arrow { left: 2rem; right: auto; }
+body[dir="rtl"] nav { flex-direction: row-reverse; }
+body[dir="rtl"] .footer-top { direction: rtl; }
+body[dir="rtl"] .info-row { flex-direction: row-reverse; text-align: right; }
+
+/* LANG TOGGLE */
+.lang-toggle {
+  position: fixed; top: 1.2rem; right: calc(5% + 140px); z-index: 1000;
+  background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.3);
+  color: var(--gold); padding: 0.35rem 0.9rem; font-size: 0.72rem;
+  letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer;
+  font-family: var(--sans); transition: all 0.25s;
+}
+.lang-toggle:hover { background: rgba(201,168,76,0.2); }
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+  position: fixed; bottom: 2rem; right: 2rem; z-index: 999;
+  width: 60px; height: 60px; background: #25D366; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  text-decoration: none; transition: all 0.3s;
+  animation: pulse-wa 2.5s infinite;
+}
+.whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.6); }
+.whatsapp-float svg { width: 30px; height: 30px; fill: white; }
+@keyframes pulse-wa {
+  0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+  50% { box-shadow: 0 4px 32px rgba(37,211,102,0.7), 0 0 0 8px rgba(37,211,102,0.08); }
+}
+.wa-tooltip {
+  position: absolute; right: 70px; bottom: 50%;
+  transform: translateY(50%);
+  background: var(--navy-light); color: var(--white);
+  padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.78rem;
+  white-space: nowrap; border: 1px solid rgba(201,168,76,0.2);
+  opacity: 0; pointer-events: none; transition: opacity 0.2s;
+}
+.whatsapp-float:hover .wa-tooltip { opacity: 1; }
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; width: 100%; z-index: 998;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.2rem 5%;
+  background: rgba(10,15,30,0.94);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(201,168,76,0.12);
+  transition: padding 0.3s;
+}
+nav.scrolled { padding: 0.8rem 5%; }
+.nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.nav-logo-mark {
+  width: 36px; height: 36px; background: var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  flex-shrink: 0;
+}
+.nav-logo-mark svg { width: 18px; height: 18px; }
+.nav-brand { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; color: var(--white); letter-spacing: 0.02em; }
+.nav-brand span { color: var(--gold); }
+.nav-links { display: flex; gap: 2.2rem; list-style: none; }
+.nav-links a { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+.nav-links a:hover { color: var(--gold); }
+.nav-cta {
+  background: transparent; border: 1px solid var(--gold); color: var(--gold);
+  padding: 0.5rem 1.4rem; font-size: 0.75rem; letter-spacing: 0.12em;
+  text-transform: uppercase; cursor: pointer; font-family: var(--sans);
+  transition: all 0.25s;
+}
+.nav-cta:hover { background: var(--gold); color: var(--navy); }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+.hamburger span { display: block; width: 24px; height: 1.5px; background: var(--gold); transition: all 0.3s; }
+
+/* MOBILE NAV */
+.mobile-nav {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
+  background: var(--navy); z-index: 997; display: flex;
+  flex-direction: column; align-items: center; justify-content: center;
+  gap: 2.5rem; opacity: 0; pointer-events: none; transition: opacity 0.3s;
+}
+.mobile-nav.open { opacity: 1; pointer-events: all; }
+.mobile-nav a { font-family: var(--serif); font-size: 2rem; color: var(--white); text-decoration: none; transition: color 0.2s; }
+.mobile-nav a:hover { color: var(--gold); }
+
+/* HERO */
+.hero {
+  min-height: 100vh; position: relative;
+  display: flex; align-items: center;
+  padding: 8rem 5% 5rem;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0; z-index: 0;
+  background: linear-gradient(135deg, #0a0f1e 0%, #111827 50%, #0d1a2e 100%);
+}
+.hero-grid {
+  position: absolute; inset: 0; z-index: 1;
+  background-image:
+    linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.hero-glow {
+  position: absolute; right: -10%; top: 10%;
+  width: 700px; height: 700px; z-index: 1;
+  background: radial-gradient(circle, rgba(201,168,76,0.07) 0%, transparent 65%);
+  animation: glow-pulse 6s ease-in-out infinite;
+}
+@keyframes glow-pulse { 0%,100%{opacity:0.7;transform:scale(1);} 50%{opacity:1;transform:scale(1.08);} }
+.hero-content { position: relative; z-index: 2; max-width: 700px; }
+.hero-eyebrow {
+  font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 1.5rem;
+  display: flex; align-items: center; gap: 12px;
+  opacity: 0; animation: fadeUp 0.8s 0.2s forwards;
+}
+.hero-eyebrow::before { content: ''; display: block; width: 40px; height: 1px; background: var(--gold); }
+.hero-h1 {
+  font-family: var(--serif); font-size: clamp(2.8rem, 6vw, 5.5rem);
+  font-weight: 600; line-height: 1.05; color: var(--white);
+  margin-bottom: 1.5rem;
+  opacity: 0; animation: fadeUp 0.8s 0.4s forwards;
+}
+.hero-h1 em { color: var(--gold); font-style: normal; }
+.hero-sub {
+  font-size: 1rem; color: var(--muted); max-width: 480px;
+  line-height: 1.8; margin-bottom: 2.5rem;
+  opacity: 0; animation: fadeUp 0.8s 0.6s forwards;
+}
+.hero-actions {
+  display: flex; gap: 1rem; flex-wrap: wrap;
+  opacity: 0; animation: fadeUp 0.8s 0.8s forwards;
+}
+.btn-primary {
+  background: var(--gold); color: var(--navy);
+  padding: 0.9rem 2.2rem; border: none; cursor: pointer;
+  font-family: var(--sans); font-size: 0.82rem;
+  letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500;
+  transition: all 0.25s; text-decoration: none; display: inline-block;
+}
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+.btn-outline {
+  background: transparent; color: var(--text);
+  padding: 0.9rem 2.2rem; border: 1px solid rgba(255,255,255,0.2); cursor: pointer;
+  font-family: var(--sans); font-size: 0.82rem;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  transition: all 0.25s; text-decoration: none; display: inline-block;
+}
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-1px); }
+.hero-stats {
+  display: flex; gap: 3rem; margin-top: 4rem;
+  padding-top: 3rem; border-top: 1px solid rgba(201,168,76,0.15);
+  opacity: 0; animation: fadeUp 0.8s 1s forwards;
+  flex-wrap: wrap;
+}
+.hero-stat-num { font-family: var(--serif); font-size: 2.4rem; font-weight: 600; color: var(--gold); line-height: 1; }
+.hero-stat-label { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+.hero-scroll {
+  position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+  z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 6px;
+  color: var(--muted); font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase;
+  animation: bounce 2s ease-in-out infinite;
+}
+.hero-scroll::after { content: '↓'; font-size: 1rem; color: var(--gold); }
+@keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0);} 50%{transform:translateX(-50%) translateY(6px);} }
+
+@keyframes fadeUp { from{opacity:0;transform:translateY(24px);} to{opacity:1;transform:none;} }
+
+/* DIVIDER */
+.divider { height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+
+/* TRUST BAR */
+.trust-bar {
+  background: var(--navy-light);
+  padding: 1.2rem 5%;
+  overflow: hidden; position: relative;
+}
+.trust-track {
+  display: flex; gap: 4rem; width: max-content;
+  animation: scroll-trust 28s linear infinite;
+}
+.trust-bar:hover .trust-track { animation-play-state: paused; }
+.trust-item { display: flex; align-items: center; gap: 10px; white-space: nowrap; }
+.trust-icon { color: var(--gold); font-size: 12px; }
+.trust-text { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+@keyframes scroll-trust { 0%{transform:translateX(0);} 100%{transform:translateX(-50%);} }
+
+/* SECTION BASE */
+section { padding: 7rem 5%; }
+.section-header { margin-bottom: 4rem; }
+.section-tag {
+  font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--gold); display: flex; align-items: center; gap: 10px; margin-bottom: 1rem;
+}
+.section-tag::before { content: ''; width: 30px; height: 1px; background: var(--gold); display: block; }
+.section-title {
+  font-family: var(--serif); font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 600; color: var(--white); line-height: 1.15;
+}
+.section-title em { color: var(--gold); font-style: normal; }
+
+/* PRODUCTS */
+.products { background: var(--navy); }
+.products-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+  background: rgba(201,168,76,0.08);
+}
+.product-card {
+  background: var(--navy); padding: 2.8rem 2.2rem;
+  position: relative; overflow: hidden; cursor: pointer;
+  transition: background 0.3s;
+}
+.product-card:hover { background: var(--navy-light); }
+.product-card::after {
+  content: ''; position: absolute; bottom: 0; left: 0;
+  width: 0; height: 2px; background: var(--gold);
+  transition: width 0.5s cubic-bezier(0.4,0,0.2,1);
+}
+.product-card:hover::after { width: 100%; }
+.product-icon {
+  width: 52px; height: 52px; background: rgba(201,168,76,0.08);
+  border: 1px solid rgba(201,168,76,0.15);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1.8rem; transition: background 0.3s;
+}
+.product-card:hover .product-icon { background: rgba(201,168,76,0.18); }
+.product-icon svg { width: 24px; height: 24px; stroke: var(--gold); fill: none; stroke-width: 1.5; }
+.product-name { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; color: var(--white); margin-bottom: 0.7rem; }
+.product-desc { font-size: 0.83rem; color: var(--muted); line-height: 1.75; }
+.product-items { margin-top: 1.2rem; display: flex; flex-wrap: wrap; gap: 6px; }
+.product-tag {
+  font-size: 0.65rem; letter-spacing: 0.08em; text-transform: uppercase;
+  background: rgba(201,168,76,0.08); color: var(--gold);
+  padding: 3px 10px; border: 1px solid rgba(201,168,76,0.2);
+}
+.product-arrow { position: absolute; top: 2.8rem; right: 2.2rem; color: var(--gold); opacity: 0; transition: all 0.3s; font-size: 1.1rem; transform: translateX(-6px); }
+.product-card:hover .product-arrow { opacity: 1; transform: none; }
+
+/* ABOUT */
+.about { background: var(--navy-mid); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
+.about-box {
+  background: var(--navy-light); border: 1px solid rgba(201,168,76,0.15);
+  padding: 3.5rem; aspect-ratio: 1;
+  display: flex; flex-direction: column; justify-content: center;
+  position: relative; overflow: hidden;
+}
+.about-box::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 55%; background: linear-gradient(180deg, var(--gold), transparent); }
+.about-box::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--gold), transparent); }
+.about-box-num { font-family: var(--serif); font-size: 7rem; font-weight: 700; color: rgba(201,168,76,0.08); line-height: 1; margin-bottom: 1rem; }
+.about-box-label { font-family: var(--serif); font-size: 1.6rem; color: var(--white); font-weight: 500; line-height: 1.2; }
+.about-box-sub { font-size: 0.83rem; color: var(--muted); margin-top: 0.8rem; line-height: 1.7; }
+.about-badge {
+  position: absolute; bottom: -1.5rem; right: -1.5rem;
+  background: var(--gold); color: var(--navy);
+  width: 130px; height: 130px; border-radius: 50%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  font-family: var(--serif);
+}
+.about-badge-num { font-size: 2rem; font-weight: 700; line-height: 1; }
+.about-badge-text { font-size: 0.6rem; letter-spacing: 0.08em; text-align: center; margin-top: 3px; }
+.about-text p { color: var(--muted); font-size: 0.95rem; line-height: 1.9; margin-bottom: 1.3rem; }
+.about-text p strong { color: var(--white); font-weight: 500; }
+.about-pillars { display: flex; gap: 2.5rem; margin-top: 2.5rem; flex-wrap: wrap; }
+.pillar { border-top: 1px solid rgba(201,168,76,0.25); padding-top: 1rem; min-width: 80px; }
+.pillar-num { font-family: var(--serif); font-size: 1.7rem; color: var(--gold); font-weight: 600; }
+.pillar-label { font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-top: 3px; }
+
+/* WHY US */
+.whyus { background: var(--navy); }
+.whyus-inner { display: grid; grid-template-columns: 1fr 1.4fr; gap: 6rem; align-items: start; }
+.whyus-feature { padding: 2rem 0; border-bottom: 1px solid rgba(255,255,255,0.04); display: flex; gap: 1.8rem; }
+.whyus-feature:last-child { border-bottom: none; }
+.feature-num { font-family: var(--serif); font-size: 2.2rem; color: rgba(201,168,76,0.2); font-weight: 700; min-width: 42px; line-height: 1; padding-top: 2px; }
+.feature-title { font-size: 0.95rem; font-weight: 500; color: var(--white); margin-bottom: 0.5rem; }
+.feature-desc { font-size: 0.83rem; color: var(--muted); line-height: 1.75; }
+.whyus-aside {
+  background: var(--navy-light); border: 1px solid rgba(201,168,76,0.15);
+  padding: 2.5rem; position: sticky; top: 7rem;
+}
+.aside-header { border-bottom: 1px solid rgba(201,168,76,0.15); padding-bottom: 1.5rem; margin-bottom: 1.5rem; }
+.aside-title { font-family: var(--serif); font-size: 1.6rem; color: var(--white); margin-bottom: 1rem; }
+.aside-stars { color: var(--gold); font-size: 1.1rem; letter-spacing: 3px; margin-bottom: 0.5rem; }
+.aside-rating-row { display: flex; align-items: baseline; gap: 10px; }
+.aside-rating-num { font-family: var(--serif); font-size: 3.2rem; color: var(--gold); font-weight: 600; line-height: 1; }
+.aside-rating-label { font-size: 0.72rem; color: var(--muted); letter-spacing: 0.1em; }
+.aside-review { background: rgba(255,255,255,0.02); border-left: 2px solid var(--gold); padding: 1rem 1.2rem; margin-bottom: 1rem; }
+.aside-review:last-child { margin-bottom: 0; }
+.aside-review-text { font-size: 0.83rem; color: var(--muted); line-height: 1.7; font-style: italic; }
+.aside-review-author { font-size: 0.7rem; color: var(--gold); margin-top: 0.5rem; letter-spacing: 0.05em; }
+
+/* TESTIMONIALS */
+.testimonials { background: var(--navy-mid); }
+.testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+.testi-card {
+  background: var(--navy); border: 1px solid rgba(201,168,76,0.08);
+  padding: 2rem; position: relative; transition: border-color 0.3s, transform 0.3s;
+}
+.testi-card:hover { border-color: rgba(201,168,76,0.25); transform: translateY(-4px); }
+.testi-quote { font-family: var(--serif); font-size: 3.5rem; color: var(--gold); line-height: 0.5; margin-bottom: 1.2rem; opacity: 0.35; }
+.testi-text { font-size: 0.86rem; color: var(--muted); line-height: 1.82; margin-bottom: 1.8rem; }
+.testi-author { display: flex; align-items: center; gap: 12px; }
+.testi-avatar {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.25);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.72rem; font-weight: 500; color: var(--gold); flex-shrink: 0;
+}
+.testi-name { font-size: 0.85rem; color: var(--white); font-weight: 500; }
+.testi-role { font-size: 0.7rem; color: var(--muted); margin-top: 1px; }
+
+/* CONTACT FORM */
+.contact-section { background: var(--navy); }
+.contact-inner { display: grid; grid-template-columns: 1fr 1.2fr; gap: 5rem; align-items: start; }
+.contact-info {}
+.contact-card {
+  background: var(--navy-light); border: 1px solid rgba(201,168,76,0.12);
+  padding: 2rem; margin-top: 2rem;
+}
+.info-row { display: flex; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.04); align-items: flex-start; }
+.info-row:last-child { border-bottom: none; }
+.info-icon-box {
+  width: 36px; height: 36px; background: rgba(201,168,76,0.08);
+  border: 1px solid rgba(201,168,76,0.15);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; font-size: 14px;
+}
+.info-label { font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.info-val { font-size: 0.9rem; color: var(--white); margin-top: 3px; }
+.info-val a { color: var(--gold); text-decoration: none; }
+.info-val a:hover { text-decoration: underline; }
+
+/* FORM */
+.contact-form { }
+.form-title { font-family: var(--serif); font-size: 1.8rem; color: var(--white); margin-bottom: 2rem; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form-field { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
+.form-field.full { grid-column: 1 / -1; }
+.form-field label { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.form-field input,
+.form-field select,
+.form-field textarea {
+  background: var(--navy-light); border: 1px solid rgba(201,168,76,0.15);
+  color: var(--white); padding: 0.85rem 1rem; font-family: var(--sans); font-size: 0.9rem;
+  outline: none; transition: border-color 0.25s; width: 100%;
+  appearance: none;
+}
+.form-field select { cursor: pointer; }
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus { border-color: var(--gold); }
+.form-field input::placeholder,
+.form-field textarea::placeholder { color: rgba(138,150,168,0.5); }
+.form-field textarea { resize: vertical; min-height: 120px; }
+.form-submit {
+  background: var(--gold); color: var(--navy); border: none;
+  padding: 1rem 2.5rem; font-family: var(--sans); font-size: 0.82rem;
+  letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500;
+  cursor: pointer; transition: all 0.25s; margin-top: 0.5rem;
+  width: 100%;
+}
+.form-submit:hover { background: var(--gold-light); }
+.form-submit:active { transform: scale(0.99); }
+.form-success {
+  display: none; background: rgba(37,211,102,0.08); border: 1px solid rgba(37,211,102,0.25);
+  padding: 1.5rem; text-align: center; color: #7ee8a2; font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+/* MAP */
+.map-container { margin-top: 4rem; }
+.map-placeholder {
+  background: var(--navy-light); border: 1px solid rgba(201,168,76,0.12);
+  height: 300px; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 1.2rem;
+  position: relative; overflow: hidden; cursor: pointer; transition: border-color 0.3s;
+}
+.map-placeholder:hover { border-color: rgba(201,168,76,0.3); }
+.map-grid-bg {
+  position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(201,168,76,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+.map-roads {
+  position: absolute; inset: 0;
+  background: linear-gradient(transparent 48%, rgba(201,168,76,0.04) 48%, rgba(201,168,76,0.04) 52%, transparent 52%),
+              linear-gradient(90deg, transparent 38%, rgba(201,168,76,0.04) 38%, rgba(201,168,76,0.04) 42%, transparent 42%);
+}
+.map-pin-wrap { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+.map-pin {
+  width: 48px; height: 48px; background: var(--gold); border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg); display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 0 0 10px rgba(201,168,76,0.12), 0 0 0 20px rgba(201,168,76,0.05);
+  animation: pin-bounce 2s ease-in-out infinite;
+}
+@keyframes pin-bounce { 0%,100%{transform:rotate(-45deg) translateY(0);} 50%{transform:rotate(-45deg) translateY(-5px);} }
+.map-pin svg { transform: rotate(45deg); width: 20px; height: 20px; fill: var(--navy); }
+.map-label { color: var(--white); font-size: 0.9rem; position: relative; z-index: 2; font-weight: 500; }
+.map-sub { color: var(--muted); font-size: 0.75rem; position: relative; z-index: 2; }
+.map-cta-link {
+  position: relative; z-index: 2; font-size: 0.75rem; color: var(--gold);
+  text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase;
+  border-bottom: 1px solid rgba(201,168,76,0.3); padding-bottom: 2px;
+  transition: border-color 0.2s;
+}
+.map-cta-link:hover { border-color: var(--gold); }
+
+/* CTA BANNER */
+.cta-section {
+  background: var(--gold); padding: 5.5rem 5%;
+  text-align: center; position: relative; overflow: hidden;
+}
+.cta-section::before {
+  content: ''; position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(10,15,30,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(10,15,30,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.cta-section::after {
+  content: ''; position: absolute; left: -80px; top: -80px;
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 60%);
+}
+.cta-inner { position: relative; z-index: 1; }
+.cta-h2 { font-family: var(--serif); font-size: clamp(2rem, 4vw, 3.2rem); color: var(--navy); font-weight: 600; margin-bottom: 1rem; }
+.cta-sub { font-size: 1rem; color: rgba(10,15,30,0.6); max-width: 520px; margin: 0 auto 2.5rem; line-height: 1.7; }
+.cta-actions { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+.btn-dark { background: var(--navy); color: var(--gold); padding: 0.9rem 2.2rem; border: none; cursor: pointer; font-family: var(--sans); font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500; transition: all 0.25s; text-decoration: none; display: inline-block; }
+.btn-dark:hover { background: var(--navy-light); transform: translateY(-1px); }
+.btn-transparent { background: transparent; color: var(--navy); padding: 0.9rem 2.2rem; border: 2px solid var(--navy); cursor: pointer; font-family: var(--sans); font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; transition: all 0.25s; text-decoration: none; display: inline-block; }
+.btn-transparent:hover { background: var(--navy); color: var(--gold); }
+
+/* FOOTER */
+footer { background: #050810; padding: 5rem 5% 2.5rem; }
+.footer-top { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 3rem; padding-bottom: 3.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.footer-brand-block {}
+.footer-logo-wrap { display: flex; align-items: center; gap: 12px; margin-bottom: 1.2rem; }
+.footer-about { font-size: 0.83rem; color: var(--muted); line-height: 1.85; max-width: 260px; margin-bottom: 1.5rem; }
+.footer-social { display: flex; gap: 10px; }
+.social-btn {
+  width: 36px; height: 36px; border: 1px solid rgba(201,168,76,0.2);
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none; color: var(--muted); font-size: 14px; transition: all 0.25s;
+}
+.social-btn:hover { border-color: var(--gold); color: var(--gold); background: rgba(201,168,76,0.05); }
+.footer-col h4 { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 0.8rem; }
+.footer-col ul li a { font-size: 0.83rem; color: var(--muted); text-decoration: none; transition: color 0.2s; display: flex; align-items: center; gap: 6px; }
+.footer-col ul li a:hover { color: var(--gold); }
+.footer-col ul li a::before { content: '›'; color: rgba(201,168,76,0.4); font-size: 0.9rem; }
+.footer-bottom { padding-top: 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+.footer-copy { font-size: 0.75rem; color: var(--muted); }
+.footer-copy span { color: var(--gold); }
+.footer-badge { display: flex; align-items: center; gap: 8px; font-size: 0.75rem; color: var(--muted); }
+.badge-stars { color: var(--gold); }
+
+/* SCROLL ANIMATIONS */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.75s cubic-bezier(0.4,0,0.2,1), transform 0.75s cubic-bezier(0.4,0,0.2,1); }
+.reveal.visible { opacity: 1; transform: none; }
+.reveal-left { opacity: 0; transform: translateX(-28px); transition: opacity 0.75s, transform 0.75s; }
+.reveal-left.visible { opacity: 1; transform: none; }
+.reveal-right { opacity: 0; transform: translateX(28px); transition: opacity 0.75s, transform 0.75s; }
+.reveal-right.visible { opacity: 1; transform: none; }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .whyus-inner { grid-template-columns: 1fr; }
+  .whyus-aside { position: static; }
+  .contact-inner { grid-template-columns: 1fr; }
+}
+@media (max-width: 860px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-box { aspect-ratio: unset; padding: 2.5rem; }
+  .about-badge { bottom: -1rem; right: -1rem; width: 100px; height: 100px; }
+  .products-grid { grid-template-columns: 1fr 1fr; }
+  .testi-grid { grid-template-columns: 1fr 1fr; }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .lang-toggle { right: 5%; top: auto; bottom: calc(2rem + 70px); }
+  .nav-cta { display: none; }
+  .form-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 580px) {
+  .products-grid { grid-template-columns: 1fr; }
+  .testi-grid { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr; }
+  .trust-bar { display: none; }
+  .hero-stats { gap: 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- WHATSAPP FLOAT -->
+<a class="whatsapp-float" href="https://wa.me/971000000000" target="_blank" rel="noopener" title="Chat on WhatsApp">
+  <span class="wa-tooltip">Chat with us on WhatsApp</span>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- LANG TOGGLE -->
+<button class="lang-toggle" id="langToggle" onclick="toggleLang()">عربي</button>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#home" onclick="closeMobileNav()">Home</a>
+  <a href="#products" onclick="closeMobileNav()">Products</a>
+  <a href="#about" onclick="closeMobileNav()">About</a>
+  <a href="#reviews" onclick="closeMobileNav()">Reviews</a>
+  <a href="#contact" onclick="closeMobileNav()">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a class="nav-logo" href="#home">
+    <div class="nav-logo-mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5">
+        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+      </svg>
+    </div>
+    <span class="nav-brand">Electro<span>mech</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#products">Products</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get a Quote</button>
+  <div class="hamburger" id="hamburger" onclick="toggleMobileNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow" data-en="Abu Dhabi's Premier Hardware Supplier" data-ar="المورد الأول للأجهزة في أبوظبي">Abu Dhabi's Premier Hardware Supplier</div>
+    <h1 class="hero-h1" data-en="The <em>Gold Standard</em> in Hardware &amp; Electrical Supply" data-ar="<em>المعيار الذهبي</em> في توريد الأجهزة والكهرباء">The <em>Gold Standard</em> in Hardware &amp; Electrical Supply</h1>
+    <p class="hero-sub" data-en="From building materials to industrial electrics — Electromech General Trading delivers quality, value, and expertise to every project across Abu Dhabi." data-ar="من مواد البناء إلى الكهرباء الصناعية — تقدم إلكتروميك التريدينج الجودة والقيمة والخبرة لكل مشروع في أبوظبي.">From building materials to industrial electrics — Electromech General Trading delivers quality, value, and expertise to every project across Abu Dhabi.</p>
+    <div class="hero-actions">
+      <a href="#products" class="btn-primary" data-en="Explore Products" data-ar="استكشف المنتجات">Explore Products</a>
+      <a href="#contact" class="btn-outline" data-en="Get a Quote" data-ar="احصل على عرض سعر">Get a Quote</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">4.9★</div>
+        <div class="hero-stat-label" data-en="Google Rating" data-ar="تقييم جوجل">Google Rating</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">42+</div>
+        <div class="hero-stat-label" data-en="Verified Reviews" data-ar="مراجعات موثقة">Verified Reviews</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">500+</div>
+        <div class="hero-stat-label" data-en="Product Lines" data-ar="خطوط إنتاج">Product Lines</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">Same Day</div>
+        <div class="hero-stat-label" data-en="Delivery Available" data-ar="توصيل متاح">Delivery Available</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll" data-en="Scroll" data-ar="اسحب للأسفل">Scroll</div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-track" id="trustTrack">
+    <div class="trust-item"><span class="trust-icon">◆</span><span class="trust-text">Hamdan Street, Abu Dhabi</span></div>
+    <div class="trust-item"><span class="trust-icon">◆</span><span class="trust-text">Competitive Pricing Guaranteed</span></div>
+    <div class="trust-item"><span class="trust-icon">◆</span><span class="trust-text">Same-Day Delivery in Abu Dhabi</span></div>
+    <div class="trust-item"><span class="trust-icon">◆</span><span class="trust-text">Expert Staff On-Site Daily</span></div>
+    <div class="trust-item"><span class="trust-icon">◆</span><span class="trust-text">500+ Product Lines In Stock</span></div>
+    <div class="trust-item"><span class="trust-icon">◆</span><span class="trust-text">Rated 4.9★ on Google</span></div>
+    <div class="trust-item"><span class="trust-icon">◆</span><span class="trust-text">Trusted by Trade Professionals</span></div>
+    <!-- Duplicate for seamless loop -->
+    <div class="trust-item"><span class="trust-icon">◆</span><span class="trust-text">Hamdan Street, Abu Dhabi</span></div>
+    <div class="trust-item"><span class="trust-icon">◆</span><span class="trust-text">Competitive Pricing Guaranteed</span></div>
+    <div class="trust-item"><span class="trust-icon">◆</span><span class="trust-text">Same-Day Delivery in Abu Dhabi</span></div>
+    <div class="trust-item"><span class="trust-icon">◆</span><span class="trust-text">Expert Staff On-Site Daily</span></div>
+    <div class="trust-item"><span class="trust-icon">◆</span><span class="trust-text">500+ Product Lines In Stock</span></div>
+    <div class="trust-item"><span class="trust-icon">◆</span><span class="trust-text">Rated 4.9★ on Google</span></div>
+    <div class="trust-item"><span class="trust-icon">◆</span><span class="trust-text">Trusted by Trade Professionals</span></div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="section-header reveal">
+    <div class="section-tag" data-en="What We Supply" data-ar="ما نوفره">What We Supply</div>
+    <h2 class="section-title" data-en="Everything Your Project <em>Demands</em>" data-ar="كل ما يحتاجه <em>مشروعك</em>">Everything Your Project <em>Demands</em></h2>
+  </div>
+  <div class="products-grid">
+    <div class="product-card reveal">
+      <div class="product-icon">
+        <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      </div>
+      <div class="product-name" data-en="Electrical Supplies" data-ar="مستلزمات كهربائية">Electrical Supplies</div>
+      <div class="product-desc" data-en="Cables, wiring, switches, breakers, and full electrical fittings for residential and commercial installations." data-ar="كابلات وأسلاك ومفاتيح وقواطع كهربائية وتجهيزات كاملة للمنازل والمشاريع التجارية.">Cables, wiring, switches, breakers, and full electrical fittings for residential and commercial installations.</div>
+      <div class="product-items">
+        <span class="product-tag">Cables</span>
+        <span class="product-tag">Switches</span>
+        <span class="product-tag">Breakers</span>
+        <span class="product-tag">Conduits</span>
+      </div>
+      <span class="product-arrow">→</span>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-icon">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+      </div>
+      <div class="product-name" data-en="Building Materials" data-ar="مواد البناء">Building Materials</div>
+      <div class="product-desc" data-en="Pipes, fittings, adhesives, fasteners, and structural components for every stage of your construction project." data-ar="أنابيب ووصلات ومواد لاصقة ومثبتات ومكونات هيكلية لكل مرحلة من مراحل البناء.">Pipes, fittings, adhesives, fasteners, and structural components for every stage of your construction project.</div>
+      <div class="product-items">
+        <span class="product-tag">Pipes</span>
+        <span class="product-tag">Fittings</span>
+        <span class="product-tag">Adhesives</span>
+        <span class="product-tag">Sealants</span>
+      </div>
+      <span class="product-arrow">→</span>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M12 2v2M12 20v2"/></svg>
+      </div>
+      <div class="product-name" data-en="AC & Cooling Parts" data-ar="قطع التكييف والتبريد">AC & Cooling Parts</div>
+      <div class="product-desc" data-en="Air conditioning compressors, components, and spare parts for maintenance professionals and HVAC technicians." data-ar="ضواغط تكييف هواء ومكونات وقطع غيار للمحترفين وفنيي التكييف.">Air conditioning compressors, components, and spare parts for maintenance professionals and HVAC technicians.</div>
+      <div class="product-items">
+        <span class="product-tag">Compressors</span>
+        <span class="product-tag">Capacitors</span>
+        <span class="product-tag">Filters</span>
+        <span class="product-tag">Valves</span>
+      </div>
+      <span class="product-arrow">→</span>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-icon">
+        <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+      </div>
+      <div class="product-name" data-en="Hand & Power Tools" data-ar="أدوات يدوية وكهربائية">Hand & Power Tools</div>
+      <div class="product-desc" data-en="Screwdrivers, drill bits, wrenches, cutters, and precision instruments for every trade and professional craft." data-ar="مفكات ورؤوس حفر ومفاتيح ربط وقاطعات وأدوات دقيقة لكل الحرف والمهن.">Screwdrivers, drill bits, wrenches, cutters, and precision instruments for every trade and professional craft.</div>
+      <div class="product-items">
+        <span class="product-tag">Drills</span>
+        <span class="product-tag">Wrenches</span>
+        <span class="product-tag">Cutters</span>
+        <span class="product-tag">Testers</span>
+      </div>
+      <span class="product-arrow">→</span>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+      </div>
+      <div class="product-name" data-en="Hardware & Fasteners" data-ar="الأجهزة والمثبتات">Hardware & Fasteners</div>
+      <div class="product-desc" data-en="Bolts, anchors, hinges, screws, and all the connecting hardware to keep every structure secure and sound." data-ar="براغي ومراسي ومفصلات وتجهيزات ربط للحفاظ على متانة كل هيكل.">Bolts, anchors, hinges, screws, and all the connecting hardware to keep every structure secure and sound.</div>
+      <div class="product-items">
+        <span class="product-tag">Bolts</span>
+        <span class="product-tag">Anchors</span>
+        <span class="product-tag">Hinges</span>
+        <span class="product-tag">Locks</span>
+      </div>
+      <span class="product-arrow">→</span>
+    </div>
+    <div class="product-card reveal">
+      <div class="product-icon">
+        <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+      </div>
+      <div class="product-name" data-en="Industrial & Safety" data-ar="الصناعة والسلامة">Industrial & Safety</div>
+      <div class="product-desc" data-en="Safety equipment, protective gear, lighting solutions, packaging materials, and specialty industrial supplies on request." data-ar="معدات السلامة والحماية وحلول الإضاءة ومواد التغليف والمستلزمات الصناعية المتخصصة.">Safety equipment, protective gear, lighting solutions, packaging materials, and specialty industrial supplies on request.</div>
+      <div class="product-items">
+        <span class="product-tag">PPE</span>
+        <span class="product-tag">Lighting</span>
+        <span class="product-tag">Packaging</span>
+        <span class="product-tag">Industrial</span>
+      </div>
+      <span class="product-arrow">→</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-visual reveal-left">
+      <div class="about-box">
+        <div class="about-box-num">I</div>
+        <div class="about-box-label" data-en="Trusted on Hamdan Street, Abu Dhabi" data-ar="موثوق به في شارع حمدان، أبوظبي">Trusted on Hamdan Street, Abu Dhabi</div>
+        <div class="about-box-sub" data-en="Abu Dhabi's go-to destination for hardware, electrical & building supplies — where professionals and homeowners both leave satisfied." data-ar="الوجهة المفضلة في أبوظبي للأجهزة والكهرباء ومواد البناء.">Abu Dhabi's go-to destination for hardware, electrical & building supplies — where professionals and homeowners both leave satisfied.</div>
+        <div class="about-badge">
+          <div class="about-badge-num">4.9</div>
+          <div class="about-badge-text">GOOGLE STARS</div>
+        </div>
+      </div>
+    </div>
+    <div class="about-text reveal-right">
+      <div class="section-tag" data-en="Our Story" data-ar="قصتنا">Our Story</div>
+      <h2 class="section-title" style="margin-bottom:1.8rem;" data-en="Built on <em>Reliability.</em><br>Driven by Service." data-ar="مبني على <em>الموثوقية.</em><br>مدفوع بالخدمة.">Built on <em>Reliability.</em><br>Driven by Service.</h2>
+      <p data-en="Electromech General Trading has become the dependable name on Hamdan Street, Abu Dhabi — the destination for professionals and tradespeople who need the right product, at the right price, right now." data-ar="أصبحت إلكتروميك للتجارة العامة الاسم الموثوق به في شارع حمدان بأبوظبي — وجهة المحترفين الذين يحتاجون المنتج الصحيح بالسعر المناسب وفي الوقت المناسب.">Electromech General Trading has become the dependable name on Hamdan Street, Abu Dhabi — the destination for professionals and tradespeople who need the right product, at the right price, right now.</p>
+      <p data-en="Whether you're a contractor sourcing materials for a major build, a technician hunting for a specific AC component, or a homeowner tackling a weekend project — our <strong>well-stocked store and knowledgeable team</strong> will get you exactly what you need." data-ar="سواء كنت مقاولاً أو فنياً أو صاحب منزل، فإن <strong>متجرنا المجهز جيداً وفريقنا المتمرس</strong> سيوفران لك ما تحتاجه بالضبط.">Whether you're a contractor sourcing materials for a major build, a technician hunting for a specific AC component, or a homeowner tackling a weekend project — our <strong>well-stocked store and knowledgeable team</strong> will get you exactly what you need.</p>
+      <p data-en="We believe great service isn't just about products — it's about the <strong>people who stand behind them.</strong> Every interaction at Electromech is built on respect, expertise, and genuine care for your project." data-ar="نؤمن أن الخدمة الممتازة لا تتعلق فقط بالمنتجات، بل بـ<strong>الأشخاص الذين يقفون خلفها.</strong> كل تفاعل في إلكتروميك مبني على الاحترام والخبرة والاهتمام الحقيقي.">We believe great service isn't just about products — it's about the <strong>people who stand behind them.</strong> Every interaction at Electromech is built on respect, expertise, and genuine care for your project.</p>
+      <div class="about-pillars">
+        <div class="pillar">
+          <div class="pillar-num">500+</div>
+          <div class="pillar-label" data-en="Product Lines" data-ar="خطوط منتجات">Product Lines</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">Same Day</div>
+          <div class="pillar-label" data-en="Delivery" data-ar="توصيل">Delivery</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">4.9★</div>
+          <div class="pillar-label" data-en="Google Rating" data-ar="تقييم جوجل">Google Rating</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">42</div>
+          <div class="pillar-label" data-en="5-Star Reviews" data-ar="مراجعات 5 نجوم">5-Star Reviews</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="whyus">
+  <div class="whyus-inner">
+    <div>
+      <div class="section-header reveal">
+        <div class="section-tag" data-en="Why Choose Us" data-ar="لماذا تختارنا">Why Choose Us</div>
+        <h2 class="section-title" data-en="We Don't Just Sell.<br>We <em>Solve.</em>" data-ar="نحن لا نبيع فقط.<br>نحن <em>نحل.</em>">We Don't Just Sell.<br>We <em>Solve.</em></h2>
+      </div>
+      <div class="whyus-feature reveal">
+        <div class="feature-num">01</div>
+        <div>
+          <div class="feature-title" data-en="Expert Staff Who Actually Know Their Products" data-ar="موظفون خبراء يعرفون منتجاتهم حقاً">Expert Staff Who Actually Know Their Products</div>
+          <div class="feature-desc" data-en="Our team doesn't just stock shelves — they diagnose problems, recommend the right solutions, and make sure you leave with exactly what your project needs." data-ar="فريقنا لا يكتفي بملء الرفوف — بل يشخص المشاكل ويوصي بالحلول الصحيحة ليضمن حصولك على ما يحتاجه مشروعك.">Our team doesn't just stock shelves — they diagnose problems, recommend the right solutions, and make sure you leave with exactly what your project needs.</div>
+        </div>
+      </div>
+      <div class="whyus-feature reveal">
+        <div class="feature-num">02</div>
+        <div>
+          <div class="feature-title" data-en="Competitive Prices — Always" data-ar="أسعار تنافسية — دائماً">Competitive Prices — Always</div>
+          <div class="feature-desc" data-en="We keep our margins honest and our volume high. Whether you're buying one item or a full project's worth of materials, our pricing is transparent and always fair." data-ar="نحافظ على هوامشنا صادقة وحجمنا عالياً. سواء اشتريت قطعة واحدة أو مواد مشروع كامل، أسعارنا شفافة وعادلة دائماً.">We keep our margins honest and our volume high. Whether you're buying one item or a full project's worth of materials, our pricing is transparent and always fair.</div>
+        </div>
+      </div>
+      <div class="whyus-feature reveal">
+        <div class="feature-num">03</div>
+        <div>
+          <div class="feature-title" data-en="Same-Day Delivery in Abu Dhabi" data-ar="توصيل في نفس اليوم في أبوظبي">Same-Day Delivery in Abu Dhabi</div>
+          <div class="feature-desc" data-en="When a project can't wait, we move fast. Order before noon and we'll get your materials to site the same day — no delays, no excuses." data-ar="عندما لا يتحمل مشروعك التأخير، نتحرك بسرعة. اطلب قبل الظهر ونوصل مواادك في نفس اليوم.">When a project can't wait, we move fast. Order before noon and we'll get your materials to site the same day — no delays, no excuses.</div>
+        </div>
+      </div>
+      <div class="whyus-feature reveal">
+        <div class="feature-num">04</div>
+        <div>
+          <div class="feature-title" data-en="Organized Store — Easy to Navigate" data-ar="متجر منظم — سهل التنقل">Organized Store — Easy to Navigate</div>
+          <div class="feature-desc" data-en="We take pride in a clean, well-arranged store where you can find what you need quickly. No hunting through cluttered shelves — just straight to the solution." data-ar="نفخر بمتجر نظيف ومرتب حيث تجد ما تحتاجه بسرعة. لا بحث في رفوف فوضوية — مباشرة إلى الحل.">We take pride in a clean, well-arranged store where you can find what you need quickly. No hunting through cluttered shelves — just straight to the solution.</div>
+        </div>
+      </div>
+      <div class="whyus-feature reveal">
+        <div class="feature-num">05</div>
+        <div>
+          <div class="feature-title" data-en="A Team That Goes Above & Beyond" data-ar="فريق يتجاوز التوقعات">A Team That Goes Above & Beyond</div>
+          <div class="feature-desc" data-en="Our customers say it best — our staff genuinely care. From sourcing hard-to-find parts to offering flexible pricing for loyal customers, we go the extra mile every time." data-ar="عملاؤنا يقولون ذلك أفضل منا — فريقنا يهتم حقاً. من إيجاد قطع نادرة إلى تقديم أسعار مرنة، نبذل جهداً إضافياً في كل مرة.">Our customers say it best — our staff genuinely care. From sourcing hard-to-find parts to offering flexible pricing for loyal customers, we go the extra mile every time.</div>
+        </div>
+      </div>
+    </div>
+    <div class="whyus-aside reveal">
+      <div class="aside-header">
+        <div class="aside-title" data-en="What Our Customers Say" data-ar="ماذا يقول عملاؤنا">What Our Customers Say</div>
+        <div class="aside-stars">★★★★★</div>
+        <div class="aside-rating-row">
+          <div class="aside-rating-num">4.9</div>
+          <div class="aside-rating-label">OUT OF 5 · 42 GOOGLE REVIEWS</div>
+        </div>
+      </div>
+      <div class="aside-review">
+        <div class="aside-review-text">"Their products are high-quality, prices are reasonable, and the staff is super professional. Five stars isn't enough — I'd give them ten if I could."</div>
+        <div class="aside-review-author">— Aqsa R., Verified Google Review</div>
+      </div>
+      <div class="aside-review">
+        <div class="aside-review-text">"Very helpful. Delivered the products I wanted the same day at good prices."</div>
+        <div class="aside-review-author">— Dubai Doer, Local Guide · 100 Reviews</div>
+      </div>
+      <div class="aside-review">
+        <div class="aside-review-text">"Went above and beyond to help me. Very kind person working here."</div>
+        <div class="aside-review-author">— Nihad, Local Guide · 30 Reviews</div>
+      </div>
+      <div class="aside-review">
+        <div class="aside-review-text">"Excellent customer service — they will provide you with exactly what you need according to your needs."</div>
+        <div class="aside-review-author">— Danishka T., Verified Customer</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="reviews">
+  <div class="section-header reveal">
+    <div class="section-tag" data-en="Customer Stories" data-ar="قصص العملاء">Customer Stories</div>
+    <h2 class="section-title" data-en="Real Words from <em>Real People</em>" data-ar="كلمات حقيقية من <em>أشخاص حقيقيين</em>">Real Words from <em>Real People</em></h2>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card reveal">
+      <div class="testi-quote">"</div>
+      <div class="testi-text">I'm seriously impressed with Electromech General Trading. The staff is friendly, helpful, and genuinely passionate about what they do. Prices are competitive and the quality of products is exceptional.</div>
+      <div class="testi-author"><div class="testi-avatar">AN</div><div><div class="testi-name">Anne</div><div class="testi-role">Repeat Customer</div></div></div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-quote">"</div>
+      <div class="testi-text">I've been a regular customer at Electromech General Trading and they never disappoint. Well-stocked with a wide range of building materials and hardware at competitive prices.</div>
+      <div class="testi-author"><div class="testi-avatar">ZB</div><div><div class="testi-name">Zeeshan Bahroz</div><div class="testi-role">Regular Customer</div></div></div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-quote">"</div>
+      <div class="testi-text">Great service and high-quality products! The team is knowledgeable, responsive, and reliable. Highly recommended for all your industrial and electrical supply needs.</div>
+      <div class="testi-author"><div class="testi-avatar">EG</div><div><div class="testi-name">Elmar Galat</div><div class="testi-role">Industrial Customer</div></div></div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-quote">"</div>
+      <div class="testi-text">Talha is a very good man — polite and very respectful whenever I shop there. The whole store has a wonderful atmosphere and the management is top-notch.</div>
+      <div class="testi-author"><div class="testi-avatar">SA</div><div><div class="testi-name">Samuel Aboagye</div><div class="testi-role">Satisfied Customer</div></div></div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-quote">"</div>
+      <div class="testi-text">Best hardware store in Al Hamdan — all the tools available immediately. The owner is very kind and even gave me a discount on tools. Truly customer-first service.</div>
+      <div class="testi-author"><div class="testi-avatar">RA</div><div><div class="testi-name">Ramim Ahmed</div><div class="testi-role">Trade Customer</div></div></div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-quote">"</div>
+      <div class="testi-text">Best hardware store in the town with the best prices. I've searched many places — Electromech exceeded all my expectations. A place I keep coming back to.</div>
+      <div class="testi-author"><div class="testi-avatar">AS</div><div><div class="testi-name">Abu Shaiba</div><div class="testi-role">Loyal Customer</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="contact-info reveal-left">
+      <div class="section-tag" data-en="Find & Contact Us" data-ar="ابحث عنا وتواصل معنا">Find & Contact Us</div>
+      <h2 class="section-title" data-en="Visit Us on <em>Hamdan Street</em>" data-ar="زورونا في <em>شارع حمدان</em>">Visit Us on <em>Hamdan Street</em></h2>
+      <div class="contact-card">
+        <div class="info-row">
+          <div class="info-icon-box">📍</div>
+          <div>
+            <div class="info-label" data-en="Address" data-ar="العنوان">Address</div>
+            <div class="info-val">Hamdan Street, Abu Dhabi, UAE</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon-box">🕐</div>
+          <div>
+            <div class="info-label" data-en="Opening Hours" data-ar="ساعات العمل">Opening Hours</div>
+            <div class="info-val" data-en="Sat – Thu: 8:00 AM – 9:00 PM" data-ar="السبت – الخميس: 8:00 صباحاً – 9:00 مساءً">Sat – Thu: 8:00 AM – 9:00 PM</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon-box">💬</div>
+          <div>
+            <div class="info-label" data-en="WhatsApp" data-ar="واتساب">WhatsApp</div>
+            <div class="info-val"><a href="https://wa.me/971000000000">Chat with us on WhatsApp →</a></div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon-box">🚚</div>
+          <div>
+            <div class="info-label" data-en="Delivery" data-ar="التوصيل">Delivery</div>
+            <div class="info-val" data-en="Same-day delivery available across Abu Dhabi" data-ar="توصيل في نفس اليوم في أبوظبي">Same-day delivery available across Abu Dhabi</div>
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon-box">🌐</div>
+          <div>
+            <div class="info-label" data-en="Languages" data-ar="اللغات">Languages</div>
+            <div class="info-val" data-en="Arabic · English · Urdu · Hindi" data-ar="العربية · الإنجليزية · الأردية · الهندية">Arabic · English · Urdu · Hindi</div>
+          </div>
+        </div>
+      </div>
+      <div class="map-container">
+        <div class="map-placeholder" onclick="window.open('https://maps.google.com/?q=Electromech+General+Trading+Hamdan+Street+Abu+Dhabi','_blank')">
+          <div class="map-grid-bg"></div>
+          <div class="map-roads"></div>
+          <div class="map-pin-wrap">
+            <div class="map-pin">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div class="map-label">Electromech General Trading</div>
+            <div class="map-sub">Hamdan Street, Abu Dhabi, UAE</div>
+            <a class="map-cta-link" href="https://maps.google.com/?q=Electromech+General+Trading+Hamdan+Street+Abu+Dhabi" target="_blank" onclick="event.stopPropagation()">Open in Google Maps →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form reveal-right">
+      <div class="form-title" data-en="Send Us a Message" data-ar="أرسل لنا رسالة">Send Us a Message</div>
+      <div class="form-grid">
+        <div class="form-field">
+          <label data-en="Your Name" data-ar="اسمك">Your Name</label>
+          <input type="text" id="fname" placeholder="Mohammed Al Mansoori">
+        </div>
+        <div class="form-field">
+          <label data-en="Phone / WhatsApp" data-ar="الهاتف / واتساب">Phone / WhatsApp</label>
+          <input type="tel" id="fphone" placeholder="+971 50 000 0000">
+        </div>
+        <div class="form-field full">
+          <label data-en="Email Address" data-ar="البريد الإلكتروني">Email Address</label>
+          <input type="email" id="femail" placeholder="you@email.com">
+        </div>
+        <div class="form-field full">
+          <label data-en="What do you need?" data-ar="ماذا تحتاج؟">What do you need?</label>
+          <select id="fcategory">
+            <option value="">Select a category...</option>
+            <option>Electrical Supplies</option>
+            <option>Building Materials</option>
+            <option>AC & Cooling Parts</option>
+            <option>Hand & Power Tools</option>
+            <option>Hardware & Fasteners</option>
+            <option>Industrial & Safety</option>
+            <option>Delivery Enquiry</option>
+            <option>General Enquiry</option>
+          </select>
+        </div>
+        <div class="form-field full">
+          <label data-en="Your Message" data-ar="رسالتك">Your Message</label>
+          <textarea id="fmessage" placeholder="Tell us what you're looking for — product names, quantities, project details..."></textarea>
+        </div>
+      </div>
+      <button class="form-submit" onclick="submitForm()" data-en="Send Enquiry →" data-ar="إرسال الاستفسار →">Send Enquiry →</button>
+      <div class="form-success" id="formSuccess">
+        ✓ Thank you! We'll be in touch within a few hours. For urgent enquiries, WhatsApp us directly.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-section">
+  <div class="cta-inner">
+    <h2 class="cta-h2" data-en="Ready to Source What Your Project Needs?" data-ar="هل أنت مستعد لتوريد ما يحتاجه مشروعك؟">Ready to Source What Your Project Needs?</h2>
+    <p class="cta-sub" data-en="Visit us on Hamdan Street or send us a message — our team is ready to help you find the right product at the right price." data-ar="زورونا في شارع حمدان أو أرسل لنا رسالة — فريقنا مستعد لمساعدتك في إيجاد المنتج الصحيح بالسعر المناسب.">Visit us on Hamdan Street or send us a message — our team is ready to help you find the right product at the right price.</p>
+    <div class="cta-actions">
+      <a href="#contact" class="btn-dark" data-en="Send Enquiry" data-ar="أرسل استفساراً">Send Enquiry</a>
+      <a href="https://wa.me/971000000000" class="btn-transparent" target="_blank" data-en="WhatsApp Us" data-ar="تواصل عبر واتساب">WhatsApp Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand-block">
+      <div class="footer-logo-wrap">
+        <div class="nav-logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <span class="nav-brand">Electro<span>mech</span></span>
+      </div>
+      <p class="footer-about">Abu Dhabi's trusted source for electrical supplies, building materials, hardware, and industrial products — on Hamdan Street.</p>
+      <div class="footer-social">
+        <a class="social-btn" href="#" title="Google Maps">📍</a>
+        <a class="social-btn" href="https://wa.me/971000000000" title="WhatsApp">💬</a>
+        <a class="social-btn" href="#" title="Instagram">📷</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4 data-en="Products" data-ar="المنتجات">Products</h4>
+      <ul>
+        <li><a href="#products">Electrical Supplies</a></li>
+        <li><a href="#products">Building Materials</a></li>
+        <li><a href="#products">AC & Cooling Parts</a></li>
+        <li><a href="#products">Hand & Power Tools</a></li>
+        <li><a href="#products">Hardware & Fasteners</a></li>
+        <li><a href="#products">Industrial & Safety</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-en="Company" data-ar="الشركة">Company</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#reviews">Customer Reviews</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#contact">Delivery Info</a></li>
+        <li><a href="#contact">Get a Quote</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-en="Visit Us" data-ar="زورونا">Visit Us</h4>
+      <ul>
+        <li><a href="https://maps.google.com/?q=Electromech+General+Trading+Hamdan+Street+Abu+Dhabi" target="_blank">Hamdan Street, Abu Dhabi</a></li>
+        <li><a href="https://maps.google.com/?q=Electromech+General+Trading+Hamdan+Street+Abu+Dhabi" target="_blank">Get Directions</a></li>
+        <li><a href="https://wa.me/971000000000">WhatsApp Us</a></li>
+        <li><a href="#contact">Request a Quote</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 <span>Electromech General Trading</span>. All rights reserved. Abu Dhabi, UAE.</div>
+    <div class="footer-badge"><span class="badge-stars">★★★★★</span> <span>Rated <span style="color:var(--gold)">4.9</span> on Google · 42 Reviews</span></div>
+  </div>
+</footer>
+
+<script>
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 70);
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+reveals.forEach(el => obs.observe(el));
+
+// Nav scroll shrink
+window.addEventListener('scroll', () => {
+  document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// Mobile nav
+function toggleMobileNav() {
+  const nav = document.getElementById('mobileNav');
+  nav.classList.toggle('open');
+}
+function closeMobileNav() {
+  document.getElementById('mobileNav').classList.remove('open');
+}
+
+// Smooth scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+  });
+});
+
+// Language toggle
+let isArabic = false;
+function toggleLang() {
+  isArabic = !isArabic;
+  const btn = document.getElementById('langToggle');
+  const html = document.documentElement;
+  const body = document.body;
+
+  if (isArabic) {
+    html.setAttribute('lang', 'ar');
+    html.setAttribute('dir', 'rtl');
+    body.setAttribute('dir', 'rtl');
+    body.style.fontFamily = "'Noto Kufi Arabic', sans-serif";
+    btn.textContent = 'English';
+    document.querySelectorAll('[data-ar]').forEach(el => {
+      el.innerHTML = el.getAttribute('data-ar');
+    });
+  } else {
+    html.setAttribute('lang', 'en');
+    html.setAttribute('dir', 'ltr');
+    body.setAttribute('dir', 'ltr');
+    body.style.fontFamily = "'DM Sans', sans-serif";
+    btn.textContent = 'عربي';
+    document.querySelectorAll('[data-en]').forEach(el => {
+      el.innerHTML = el.getAttribute('data-en');
+    });
+  }
+}
+
+// Form submission
+function submitForm() {
+  const name = document.getElementById('fname').value.trim();
+  const phone = document.getElementById('fphone').value.trim();
+  const email = document.getElementById('femail').value.trim();
+  const msg = document.getElementById('fmessage').value.trim();
+
+  if (!name || (!phone && !email)) {
+    alert('Please provide your name and at least a phone number or email address.');
+    return;
+  }
+
+  const btn = document.querySelector('.form-submit');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+
+  setTimeout(() => {
+    document.getElementById('formSuccess').style.display = 'block';
+    btn.textContent = '✓ Sent Successfully';
+    btn.style.background = '#25D366';
+    document.getElementById('fname').value = '';
+    document.getElementById('fphone').value = '';
+    document.getElementById('femail').value = '';
+    document.getElementById('fmessage').value = '';
+    document.getElementById('fcategory').value = '';
+  }, 1200);
+}
+</script>
+</body>
+</html>
